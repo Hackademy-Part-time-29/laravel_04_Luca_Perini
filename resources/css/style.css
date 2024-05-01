@@ -177,3 +177,11 @@ button {
 button:hover {
     background-color: #7f9499;
 }
+
+.thank-you-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80vh;
+}

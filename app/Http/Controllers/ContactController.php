@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Mail\ContactMail;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -16,7 +18,11 @@ class ContactController extends Controller
             return redirect()->back()->with(['error'=>'compila correttamente i campi!']);
         }
 
-        return redirect(route('thankYou'));
+        $mail= new ContactMail();
+        Mail::to('mail@mail.it')->send($mail);
+        return $mail->render();
+
+        return redirect(route('thank-you'));
     }
 
 public function thankYou(){

@@ -5,6 +5,6 @@
     <ul class="nav-links">
         <li><a href="{{route('welcome')}}">Home</a></li>
         <li><a href="{{route('articles')}}">Articles</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="{{route('contact')}}">Contact Us</a></li>
     </ul>
 </nav>

@@ -57,7 +57,7 @@ header {
 }
 
 main {
-    height: 100vh;
+    height: 100%;
     margin: 12px;
 }
 
@@ -67,6 +67,10 @@ footer {
     text-align: center;
     padding: 10px 0;
     height: 20vh;
+}
+
+.main-container{
+    height: 80vh;
 }
 
 /* CARD ARTICOLI */
@@ -113,3 +117,63 @@ footer {
   .btn:hover {
     background-color: #7f9499;
   }
+
+  /* ARTICLE SECTION */
+
+.link-items{
+    margin: 12px 0px;
+}
+
+  .article-section{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 30vw;
+  }
+
+  /* CONTACT */
+  .login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5a686b;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #7f9499;
+}

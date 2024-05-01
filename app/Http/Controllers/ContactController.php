@@ -18,7 +18,7 @@ class ContactController extends Controller
             return redirect()->back()->with(['error'=>'compila correttamente i campi!']);
         }
 
-        $mail= new ContactMail();
+        $mail= new ContactMail($request->name,$request->surname, $request->surname);
         Mail::to('mail@mail.it')->send($mail);
         return $mail->render();
 

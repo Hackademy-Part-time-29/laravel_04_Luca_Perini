@@ -46,9 +46,10 @@
 </head>
 <body>
     <div class="container">
-        <h1>Grazie per averci contattato!</h1>
+        <h1>Ciao {{$name}}, grazie per averci contattato!</h1>
         <p class="thank-you">Abbiamo ricevuto la tua richiesta e ti risponderemo il prima possibile.</p>
         <p class="contact-info">Per ulteriori domande, non esitare a contattarci all'indirizzo email supporto@celere.com</p>
+        
     </div>
 </body>
 </html>
